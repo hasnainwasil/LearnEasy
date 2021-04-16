@@ -116,6 +116,8 @@ app.post("/register", async(req,res)=>{
 	return res.render('index');
 })
 
-app.listen(5000, function(){
+var PORT = process.env.PORT || 5000;
+
+app.listen(PORT, function(){
 	console.log("Server Has Started");
 });
