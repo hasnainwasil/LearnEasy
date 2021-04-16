@@ -87,11 +87,11 @@ app.post("/login", async(req,res)=>{
 	// 	res.status(400).send("Invalid Email")
 	// }
 
-	const {username, password} = req.body;
-	const user = await User.findOne({username , password}).lean();
-	if(password === user.password){
+	// const {username, password} = req.body;
+	// const user = await User.findOne({username , password}).lean();
+	// if(password === user.password){
 		console.log("SUCESSFUL LOGIN");
-	}
+	// }
 });
 
 app.post("/register", async(req,res)=>{
