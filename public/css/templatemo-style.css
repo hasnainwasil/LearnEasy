@@ -15,6 +15,18 @@ https://templatemo.com/tm-516-known
     padding-top: 70px;
   }
 
+  @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
   /*---------------------------------------
      TYPOGRAPHY              
@@ -261,7 +273,7 @@ https://templatemo.com/tm-516-known
 
   .custom-navbar {
     background: #ffffff;
-    border-top: 5px solid #e60037;
+    /*border-top: 5px solid black;*/
     border-bottom: 0;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -312,12 +324,16 @@ https://templatemo.com/tm-516-known
   }
 
   .custom-navbar .nav li a:hover {
-    background-color: #e60037;
+   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
     color: #ffffff;
   }
 
   .custom-navbar .nav li.active > a {
-    background-color: #e60037;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
     color: #ffffff;
   }
 
@@ -411,7 +427,10 @@ https://templatemo.com/tm-516-known
   }
 
   .feature-thumb span {
-    background: #231e80;
+    /*//background: #231e80;*/
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     border-radius: 50px;
     color: #ffffff;
     font-size: 25px;
@@ -428,6 +447,56 @@ https://templatemo.com/tm-516-known
     margin: 10px 0;
   }
 
+  /*---------------------------------------
+      LOGIN BOX           
+  -----------------------------------------*/
+.loginbox{
+  width: 320px;
+  height: 420px;
+  background-color: #000;
+  color: #fff;
+  top:50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+}
+
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position:absolute; 
+  top: -50px;
+}
+
+/*---------------------------------------
+      VIDEO IFRAME          
+  -----------------------------------------*/
+/*.container2 {
+  margin-top: 12%;
+}*/
+
+.container2 h1{
+  margin-bottom: 50px;
+}
+
+iframe{
+  /*height: 100%;*/
+  width: 100%;
+}
+
+.play-btn{
+  width: 50px;
+  position: relative;
+  top: -150px;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0;
+}
+.container2 .col-md-4:hover iframe{
+  opacity: 1;
+}
 
 
   /*---------------------------------------
@@ -449,7 +518,9 @@ https://templatemo.com/tm-516-known
   }
 
   #about figure span i {
-    background: #29ca8e;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     border-radius: 50px;
     color: #ffffff;
     font-size: 25px;
@@ -457,6 +528,23 @@ https://templatemo.com/tm-516-known
     height: 50px;
     line-height: 50px;
     text-align: center;
+  }
+
+  #signup a{
+    color: white;
+    border-top: 5px;
+  }
+
+  #signup1 a{
+    color: white;
+    border-top: 5px;
+  }
+
+  #form-submit {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
   }
 
 
@@ -495,12 +583,14 @@ https://templatemo.com/tm-516-known
     margin: 0;
   }
 
-  .team-thumb span{
-    padding: 4px 20px 20px 30px;
+  .team-thumb span a{
+   /* padding: 4px 20px 20px 30px;*/
+   color: red;
   }
 
  .know-more {
-  padding: 20px 20px 0 20px;
+  padding: 10px 0px 0 0px;
+  font-size: 12px;
  }
 
   /*---------------------------------------
@@ -611,6 +701,11 @@ https://templatemo.com/tm-516-known
     background: #231e80;
   }
 
+  #course-para a{
+    color:red;
+    font-size: 12px;
+  }
+
 
 
   /*---------------------------------------
@@ -703,7 +798,7 @@ https://templatemo.com/tm-516-known
   -----------------------------------------*/
 
   #contact {
-    background: #231e80;
+    background-color: #231e80; 
   }
 
   #contact h2 {
@@ -743,6 +838,10 @@ https://templatemo.com/tm-516-known
   #contact-form input[type='submit'] {
     border-radius: 50px;
     border: 1px solid transparent;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
   }
 
   #contact-form input[type='submit']:hover {
@@ -844,6 +943,7 @@ https://templatemo.com/tm-516-known
     font-size: 12px;
     margin-top: 20px;
   }
+
 
 
 
@@ -1047,3 +1147,5 @@ https://templatemo.com/tm-516-known
     font-family: 'Nunito', sans-serif;
 
 }
+
+

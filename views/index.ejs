@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-     <title>Known - Education HTML Template</title>
+     <title>StarAgile India | Training and Certification</title>
 <!-- 
 
 Known Template 
@@ -27,6 +27,18 @@ https://templatemo.com/tm-516-known
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="/css/templatemo-style.css">
      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     <script type="text/javascript">
+          function changeText(){
+               document.getElementById("demo1").style.display = "none";
+               document.getElementById("demo2").style.display = "block";
+          }
+     </script>
+      <script type="text/javascript">
+          function changeText2(){
+               document.getElementById("demo1").style.display = "block";
+               document.getElementById("demo2").style.display = "none";
+          }
+     </script>
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -53,7 +65,7 @@ https://templatemo.com/tm-516-known
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="#" class="navbar-brand"><img src="https://staragile.com/public/img/logo.png" class="navbar-logo"></a>
+                    <a href="http://localhost:5000/" class="navbar-brand"><img src="https://staragile.com/public/img/logo.png" class="navbar-logo"></a>
                </div>
 
                <!-- MENU LINKS -->
@@ -64,7 +76,7 @@ https://templatemo.com/tm-516-known
                          <li><a href="#team" class="smoothScroll">Our Teachers</a></li>
                          <li><a href="#courses" class="smoothScroll">Courses</a></li>
                          <li><a href="#testimonial" class="smoothScroll">Reviews</a></li>
-                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                         <li><a href="#contact" class="smoothScroll">Query</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -81,6 +93,7 @@ https://templatemo.com/tm-516-known
           <div class="row">
 
                     <div class="owl-carousel owl-theme home-slider">
+
                          <div class="item item-first">
                               <div class="caption">
                                    <div class="container">
@@ -119,6 +132,53 @@ https://templatemo.com/tm-516-known
                     </div>
           </div>
      </section>
+
+
+<!--Video Frame -->
+<section id="video-frame">
+     <div class="container2 text-center">
+          <h1>Videos</h1>
+          <div class="row">
+               <div class="col-md-4">
+                    <!-- <img src="https://devclass.com/wp-content/uploads/2019/01/shutterstock_538768309.jpg" class="img-fluid">
+                    <img src="https://cdn0.iconfinder.com/data/icons/media-outline-1/60/001_-_play-512.png" class="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FEcZMa0XwvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div class="col-md-4">
+                    <!-- <img src="https://devclass.com/wp-content/uploads/2019/01/shutterstock_538768309.jpg" class="img-fluid">
+                    <img src="https://cdn0.iconfinder.com/data/icons/media-outline-1/60/001_-_play-512.png" class="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nSn_CdNxJFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div class="col-md-4">
+                    <!-- <img src="https://devclass.com/wp-content/uploads/2019/01/shutterstock_538768309.jpg" class="img-fluid">
+                    <img src="https://cdn0.iconfinder.com/data/icons/media-outline-1/60/001_-_play-512.png" class="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Nsx5hm6hsbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+          </div>
+     </div>
+     <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+     
+
 
 
      <!-- FEATURE -->
@@ -164,7 +224,7 @@ https://templatemo.com/tm-516-known
                          <div class="about-info">
                               <h2>Start your journey to a better life with online practical courses</h2>
 
-                              <figure>
+                              <figure>   
                                    <span><i class="fa fa-users"></i></span>
                                    <figcaption>
                                         <h3>Professional Trainers</h3>
@@ -188,21 +248,38 @@ https://templatemo.com/tm-516-known
                                    </figcaption>
                               </figure>
                          </div>
-                    </div>
+                    </div> 
 
                     <div class="col-md-offset-1 col-md-4 col-sm-12">
-                         <div class="entry-form">
-                              <form action="#" method="post">
-                                   <h2>Signup today</h2>
-                                   <input type="text" name="full name" class="form-control" placeholder="Full name" required="">
+                         <div class="entry-form" id="demo1" >
+                              <form action="/login" method="post">
+                                   <h2>Login</h2>
+                                   <!-- <input type="text" name="full name" class="form-control" placeholder="Full name" required=""> -->
 
                                    <input type="email" name="email" class="form-control" placeholder="Your email address" required="">
 
                                    <input type="password" name="password" class="form-control" placeholder="Your password" required="">
 
-                                   <button class="submit-btn form-control" id="form-submit">Get started</button>
+                                   <button class="submit-btn form-control" id="form-submit">Submit</button>
                               </form>
+                                        <p>or</p>
+                                        <p id="signup" onclick="changeText()"><a href="#about">Signup today</a></p>
                          </div>
+                         <!-- SignUp -->
+                         <div class="entry-form" id="demo2" style="display: none">
+                              <form action="/register" method="post" >
+                                   <h2>Signup</h2>
+                                   <input type="text" name="name" class="form-control" placeholder="Full name" required="">
+
+                                   <input type="email" name="email" class="form-control" placeholder="Your email address" required="">
+
+                                   <input type="password" name="password" class="form-control" placeholder="Your password" required="">
+
+                                   <button class="submit-btn form-control" id="form-submit">Signup</button>
+                              </form> 
+                              <p id="signup1" onclick="changeText2()"><a href="#about">Already have an account</a></p>      
+                         </div>
+
                     </div>
 
                </div>
@@ -224,16 +301,16 @@ https://templatemo.com/tm-516-known
                     <div class="col-md-3 col-sm-6">
                          <div class="team-thumb">
                               <div class="team-image">
-                                   <img src="images/author-image1.jpg" class="img-responsive" alt="">
+                                   <img src="https://staragile.com/storage/app/public/278_278_trainer_1564463361.jpg" class="img-responsive" alt="">
                               </div>
                               <div class="team-info">
                                    <h3>Narasimha Reddy</h3>
                                    <ul class="know-more">
-                                    <span id="know-more"><a href="#">To Know More</a></span>
+                                    <span id="know-more">NIT Graduate with 18 years of experience in IT Indus... <a href="https://staragile.com/trainers/narasimha-reddy-bommaka">(Read More)</a></span>
                                    </ul>
                               </div>
                               <ul class="social-icon">
-                                   <li><a href="#" class="fa fa-linkedin"></a></li>
+                                   <li><a href="https://www.linkedin.com/in/narasimha-reddy-bommaka-cst-6ab33513/" class="fa fa-linkedin"></a></li>
                               </ul>
                          </div>
                     </div>
@@ -241,12 +318,12 @@ https://templatemo.com/tm-516-known
                     <div class="col-md-3 col-sm-6">
                          <div class="team-thumb">
                               <div class="team-image">
-                                   <img src="images/author-image2.jpg" class="img-responsive" alt="">
+                                   <img src="https://staragile.com/storage/app/public/278_278_trainer_1603435622.jpg" class="img-responsive" alt="">
                               </div>
                               <div class="team-info">
                                    <h3>Prashant P Beniwal</h3>
                                    <ul class="know-more">
-                                    <span id="know-more"><a href="#">To Know More</a></span>
+                                    <span id="know-more">Results oriented professional having rigorous experience in... <a href="https://staragile.com/trainers/prashant-p-beniwal">(Read More)</a></span>
                                    </ul>
                               </div>
                                     <ul class="social-icon">
@@ -258,12 +335,12 @@ https://templatemo.com/tm-516-known
                     <div class="col-md-3 col-sm-6">
                          <div class="team-thumb">
                               <div class="team-image">
-                                   <img src="images/author-image3.jpg" class="img-responsive" alt="">
+                                   <img src="https://staragile.com/storage/app/public/278_278_trainer_1610436963.png" class="img-responsive" alt="">
                               </div>
                               <div class="team-info">
                                    <h3>Madhavi Ledalla</h3>
                                    <ul class="know-more">
-                                    <span id="know-more"><a href="#">To Know More</a></span>
+                                    <span id="know-more">Agile transformational enthusiast having over 20 years of... <a href="https://staragile.com/trainers/madhavi-ledalla">(Read More)</a></span>
                                    </ul>
                               </div>
                               <ul class="social-icon">
@@ -275,12 +352,12 @@ https://templatemo.com/tm-516-known
                     <div class="col-md-3 col-sm-6">
                          <div class="team-thumb">
                               <div class="team-image">
-                                   <img src="images/author-image4.jpg" class="img-responsive" alt="">
+                                   <img src="https://staragile.com/storage/app/public/278_278_trainer_1603449356.jpg" class="img-responsive" alt="">
                               </div>
                               <div class="team-info">
-                                   <h3>Andrew Berti</h3>
+                                   <h3>Krishna Chodipilli</h3>
                                    <ul class="know-more">
-                                    <span id="know-more"><a href="#">To Know More</a></span>
+                                    <span id="know-more">For nearly 20 years Krishna's passion has been helping peop... <a href="https://staragile.com/trainers/krishna-chodipilli">(Read More)</a></span>
                                    </ul>
                               </div>
                               <ul class="social-icon">
@@ -320,7 +397,7 @@ https://templatemo.com/tm-516-known
 
                                              <div class="courses-detail">
                                                   <h3><a href="#">Certified Scrum Master</a></h3>
-                                                  <p>Certified Scrum Master Certification is an interactive, hands-on practical oriented course designed specifically for increasing your knowledge base on Scrum.</p>
+                                                  <p id="course-para">Certified Scrum Master Certification is an interactive, hands-on practical oriented course designed specifically for incre... <a href="">(Read More)</a></p>
                                              </div>
 
                                              <div class="courses-info">
@@ -351,7 +428,7 @@ https://templatemo.com/tm-516-known
 
                                              <div class="courses-detail">
                                                   <h3><a href="#">JIRA</a></h3>
-                                                  <p id="course-para">Jira is the project management tool that helps to track, manage, and control the large and complex project in a very simple and easy way.</p>
+                                                  <p id="course-para">Jira is the project management tool that helps to track, manage, and control the large and complex project in a very sim... <a href="">(Read More)</a></p>
                                              </div>
 
                                              <div class="courses-info">
@@ -382,7 +459,7 @@ https://templatemo.com/tm-516-known
 
                                              <div class="courses-detail">
                                                   <h3><a href="#">DevOps</a></h3>
-                                                  <p>The DevOps course in India will prepare you with the automation, coding, scripting, collaboration, communication, and DevOps tools.</p>
+                                                  <p id="course-para">The DevOps course in India will prepare you with the automation, coding, scripting, collaboration, communication, a... <a href="">(Read More)</a></p>
                                              </div>
 
                                              <div class="courses-info">
@@ -413,7 +490,7 @@ https://templatemo.com/tm-516-known
 
                                              <div class="courses-detail">
                                                   <h3><a href="#">Data Science with Python</a></h3>
-                                                  <p>The Data Science with Python Training is designed keeping the data scientist role in mind. Python has been accepted as an easy-to-use language and thus data analysis becomes simple.</p>
+                                                  <p id="course-para">The Data Science with Python Training is designed keeping the data scientist role in mind. Python has been accepte... <a href="">(Read More)</a></p>
                                              </div>
 
                                              <div class="courses-info">
@@ -444,7 +521,7 @@ https://templatemo.com/tm-516-known
 
                                              <div class="courses-detail">
                                                   <h3><a href="#">Machine Learning</a></h3>
-                                                  <p> The aim of this online machine learning course offered by Staragile is to let you explore all the ML concepts which is the most important part of artificial intelligence.</p>
+                                                  <p id="course-para"> The aim of this online machine learning course offered by Staragile is to let you explore all the ML concepts which is the most... <a href="">(Read More)</a></p>
                                              </div>
 
                                              <div class="courses-info">
@@ -567,21 +644,21 @@ https://templatemo.com/tm-516-known
                <div class="row">
 
                     <div class="col-md-6 col-sm-12">
-                         <form id="contact-form" role="form" action="" method="post">
+                         <form id="contact-form" role="form" action="/email" method="post">
                               <div class="section-title">
-                                   <h2>Contact us <small>we love conversations. let us talk!</small></h2>
+                                   <h2>Drop Your Query<!-- <small>we love conversations. let us talk!</small> --></h2>
                               </div>
 
                               <div class="col-md-12 col-sm-12">
-                                   <input type="text" class="form-control" placeholder="Enter full name" name="name" required="">
+                                   <input type="text" class="form-control" placeholder="Enter Full Name" name="name" required="">
                     
-                                   <input type="email" class="form-control" placeholder="Enter email address" name="email" required="">
+                                   <input type="email" class="form-control" placeholder="Enter Email Address" name="email" required="">
 
-                                   <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>
+                                   <textarea class="form-control" rows="6" placeholder="Enter Your Query" name="message" required=""></textarea>
                               </div>
 
                               <div class="col-md-4 col-sm-12">
-                                   <input type="submit" class="form-control" name="send message" value="Send Message">
+                                   <input type="submit" class="form-control" name="send message" value="Submit">
                               </div>
 
                          </form>
@@ -605,11 +682,12 @@ https://templatemo.com/tm-516-known
                
           </div>
           <div class="col-md-4 col-sm-6" id="scrollingfooter-div2">
-               <i class="fa fa-pencil" aria-hidden="true"><span id="scrollingfooter-q">Drop a Query</span></i>
+               <i class="fa fa-envelope" aria-hidden="true"></i><span id="scrollingfooter-r">trainings@staragile.com</span></i>
           </div>
       
       <div class="col-md-4 col-sm-6" id="scrollingfooter-div3">
-               <i class="fa fa-envelope" aria-hidden="true"></i><span id="scrollingfooter-r">trainings@staragile.com</span></i>
+          <i class="fa fa-pencil" aria-hidden="true"><span id="scrollingfooter-q">Drop a Query</span></i>
+               
           </div>
      </div> 
 
@@ -674,7 +752,7 @@ https://templatemo.com/tm-516-known
                                    <div class="form-group">
                                         <form action="#" method="get">
                                              <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required="">
-                                             <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
+                                             <input type="submit" class="form-control" name="submit" id="form-submit3" value="Send me">
                                         </form>
                                         <span><sup>*</sup> Please note - we do not spam your email.</span>
                                    </div>
@@ -690,7 +768,7 @@ https://templatemo.com/tm-516-known
 <!-- Start of ChatBot (www.chatbot.com) code -->
 <script type="text/javascript">
     window.__be = window.__be || {};
-    window.__be.id = "605dd09a9d31c20007cdacd7";
+    window.__be.id = "6078210ac29c660007d3bc95";
     (function() {
         var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
         be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
@@ -722,6 +800,7 @@ s0.parentNode.insertBefore(s1,s0);
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
+
 
 </body>
 </html>
